@@ -2,11 +2,11 @@
 Suite de fibonacci
 """
 
-def fibonacci(n, un=1, un1=1)->int:
+def fibonacci(nombre, fibo=1, fibo1=1)->int:
     """
     Fonction récursive qui simule la suite de Fibonacci
     """
-    return fibonacci(n-1, un1, un1+un) if n else un
+    return fibonacci(nombre-1, fibo1, fibo1+fibo) if nombre else fibo
 
 #Appel de la fonction
 print(fibonacci(15))
